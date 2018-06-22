@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<presets>
+    <preset name="byDrawing">
+        <valueRelation>
+            <Layer>drawings</Layer>
+            <keyColumn>pkuid</keyColumn>
+            <valueColumn>name</valueColumn>
+        </valueRelation>
+        <operator>=</operator> <!--  =,<,>, <=, >=,like   -->
+        <column>drawing</column>
+		<autoValueList>True</autoValueList> <!--  auto update filter value pick list  -->
+    </preset>
+	
+	  <preset name="byClass">
+        <valueRelation>
+            <Layer>drawings</Layer>
+            <keyColumn>pkuid</keyColumn>
+            <valueColumn>class</valueColumn>
+        </valueRelation>
+        <operator>=</operator>
+        <column>drawing</column>
+		<autoValueList>True</autoValueList> <!--  auto update filter value pick list  -->
+    </preset>
+	
+    <preset name="by min Linesize">
+        <operator>></operator>
+        <column>size</column> 
+        <column>linesize</column> <!--  note that column differs between layers  -->
+		<autoValueList>False</autoValueList> <!--  optional, false by default  -->
+	</preset>
+</presets>
