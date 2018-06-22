@@ -1,0 +1,39 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Layer Group Filter
+qgisMinimumVersion=3.0
+description=Manage your Layer Filters (data subset) using layer-groups
+version=0.1
+author=Peter Bontinck
+email=bontinck.p@gmail.com
+
+about=Limit the dataset of all layers in a Layer group, by rolling-out similar attribute filters. You can describe your own set of filter presets using XML, so while using the plugin you just need to choose a preset and one common filter value. Supports value relations to other layers and non-uniform field names. Layer Filter presets (XML-string) are saved as a project variable.
+
+tracker=https://github.com/PeterBontinck/QGIS-Layergroup-Filter/issues
+repository=https://github.com/PeterBontinck/QGIS-Layergroup-Filter
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=field, attribute, layers, python, group, filter
+
+homepage=https://github.com/PeterBontinck/QGIS-Layergroup-Filter
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
