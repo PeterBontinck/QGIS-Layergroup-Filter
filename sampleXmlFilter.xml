@@ -28,4 +28,9 @@
         <column>linesize</column> <!--  note that column differs between layers  -->
 		<autoValueList>False</autoValueList> <!--  optional, false by default  -->
 	</preset>
+    <preset name="in Operator">
+        <operator>in</operator>
+        <column>mytextcolumn</column> 
+        <value>'1465', '1483', '1473', '1469', '1467'</value>
+	</preset>
 </presets>
